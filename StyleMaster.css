@@ -51,6 +51,11 @@ html{
 .PersonalDetailField{
     display:flex;
     flex-direction:column;
+    align-items: center;
+}
+.ProfileEditImageButton{
+    width: 75px;
+
 }
 
 
