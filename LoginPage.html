@@ -3,39 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <title>GroupUpLogIn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body{
             background-color: #687EF4;
-            font-size: 20px;
             color: white;
+            font-family: 'Epilogue';
+            font-weight: 400;
         }
         .h1login{
             font-size: 70px;
             text-align: center;
+            margin-top: 0px;
+        }
+        .loginimage{
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: auto;
+            display: block;
         }
         .logincontainer{
             margin-left: auto;
             margin-right: auto;
-            margin-top: 50px;
-            width: 300px;
+            margin-top: 10px;
+            width: 350px;
             display: block;
-            padding-top: 20px;
+            padding: 10px;
+            font-size: 25px;
+            text-align: center;
+        }
+        .logincontainer input{
+            font-size: 25px;
+            padding: 10px;
+            border-radius: 50px;
+            border: white solid;
+            font-family: Epilogue;
+            font-weight: 400;
+        }
+        .loginbutton{
+            font-size: 35px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            padding: 10px;
+            background-color: darkblue;
+            color: white;
+            border: darkblue solid;
+            border-radius: 50px;
+            font-family: Epilogue;
+            font-weight: 400;
         }
     </style>
 </head>
 <body>
-<h1 class="h1login"> LogIn </h1>
+<img class="loginimage" src="Bilder/groupup_logo_hvit.png" height="300" width="300"/>
+<h1 class="h1login"> GroupUp </h1>
 <form>
     <div class="logincontainer">
-        <label> Username : </label>
         <input type="text" placeholder="Enter Username" name="username" required>
-        <label>Password : </label>
+        <br>
+        <br>
         <input type="password" placeholder="Enter Password" name="password" required>
-        <button class="loginbutton" type="submit">Login</button>
+        <br>
         <br>
         Forgot  your <a href="#"> password? </a>
         <br>
+        <br>
+        <button class="loginbutton" type="submit">Login</button>
+        <br>
         Remember my account <input type="checkbox" checked="checked">
+        <br>
         <br>
         Create a <a href="CreateAccountPage.html"> new account</a>
     </div>
