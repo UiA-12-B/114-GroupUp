@@ -3,40 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>MyActivities</title>
-    <style>
-        .MyActivitiestitle{
-
-        }
-    </style>
+    <link rel="stylesheet" href="StyleMaster.css">
 </head>
-
 <body>
-    <h1 class="MyActivitiesTitle">My Activities</h1>
-    <div class="MyActivitiesCategoryBox">
-        <h2 class="MyActivitiesCategoryTitle">Categories</h2>
-        <div class="MyActivitesCategoryBox">
-            <h3 class="MyActivitesCategoryTitle">Title</h3>
-            <button class="MyActivitesCategoryButton">Open</button>
-        </div>
-    </div>
-    <div class=MyActivitiesEventBox">
-        <h2 class="EventsTitle">My Events</h2>
-        <div class="MyActivitiesEventField">
-            <div class="MyActivitiesEvent">
-                <h3 class="MyActivitesEventTitle">Title</h3>
-                <p class="MyActivitesEventDate"></p>
-                <p class="MyActivitiesEventTime"></p>
-                <p class="MyActivitiesEventPlace"></p>
-
-            </div>
-            <div class="MyActivitiesEvent2">
-
-            </div>
-            <div class="MyActivitiesEvent2">
-
+    <div class="MyActivitiesContainer">
+        <h1 class="MyActivitiesTitle">My Activities</h1>
+        <div class="MyActivitiesCategoryBox">
+            <h2 class="MyActivitiesCategoryTitle">Categories</h2>
+            <div class="MyActivitesCategoryBox">
+                <h3 class="MyActivitesCategoryTitle">Title</h3>
+                <button class="MyActivitesCategoryButton">Open</button>
             </div>
         </div>
-    </div>
+        <div class="MyActivitiesJoinedEventField">
+            <h2 class="MyActivitiesJoinedEventsTitle">Joined Events</h2>
+            <div class="MyActivitiesEventScroll">
+                <div class="MyActivitiesEvent">
+                    <h3 class="MyActivitesEventTitle">Title</h3>
+                    <p class="MyActivitesEventDate"></p>
+                    <p class="MyActivitiesEventTime"></p>
+                    <p class="MyActivitiesEventPlace"></p>
+                    <button class="MyActivitiesButton">Remove</button>
+                </div>
+            </div>
+        </div>
+        <div class=MyActivitiesMyEventsField">
+            <h2 class="MyActivitiesMyEventsTitle">My Events</h2>
+            <div class="MyActivitiesEventScroll">
+                <div class="MyActivitiesEvent">
+                    <h3 class="MyActivitesEventTitle">Title</h3>
+                    <p class="MyActivitesEventDate">Date</p>
+                    <p class="MyActivitiesEventTime">Time</p>
+                    <p class="MyActivitiesEventPlace">Place</p>
+                    <button class="MyActivitiesButton">Edit</button>
+                </div>
+            </div>
+        </div>
+        <div class="CreatedEvents">
 
+        </div>
+        <div class="JoinedEvents">
+
+        </div>
+    </div>
 </body>
 </html>
