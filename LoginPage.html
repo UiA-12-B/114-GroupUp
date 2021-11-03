@@ -3,20 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>GroupUpLogIn</title>
+    <style>
+        body{
+            background-color: #687EF4;
+            font-size: 20px;
+        }
+        .h1login{
+            font-size: 70px;
+            text-align: center;
+        }
+        .logincontainer{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            width: 300px;
+            display: block;
+            padding-top: 20px;
+        }
+    </style>
 </head>
 <body>
-<h1> LogIn </h1>
+<h1 class="h1login"> LogIn </h1>
 <form>
     <div class="logincontainer">
-        <label>Username : </label>
+        <label> Username : </label>
         <input type="text" placeholder="Enter Username" name="username" required>
         <label>Password : </label>
         <input type="password" placeholder="Enter Password" name="password" required>
         <button class="loginbutton" type="submit">Login</button>
-        Forgot  your <a href="#"> password? </a>
-        <input type="checkbox" checked="checked"> Remember my account
         <br>
-        Create a <a href="#"> new account</a>
+        Forgot  your <a href="#"> password? </a>
+        <br>
+        Remember my account <input type="checkbox" checked="checked">
+        <br>
+        Create a <a href="CreateAccountPage.html"> new account</a>
     </div>
 </form>
 
