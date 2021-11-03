@@ -1,4 +1,28 @@
 html{
     background-color:#3352F3;
+    font-family: 'Epilogue';
 }
+.navbar {
+    
+}
+
+.navbar button {
+    position: absolute;
+    color: white;
+    height: 60px;
+    width: 80px;
+    border-radius: 14px;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(57, 57, 244, 1);
+    bottom: 0;  
+    left: 50%; 
+    border: none;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
+
+
+
 
