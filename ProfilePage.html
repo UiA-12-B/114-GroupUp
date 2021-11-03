@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div class="ProfileContainer">
+    <div class="ProfileContainer" id="ProfileContainer" style="display:none;">
         <h1 class="ProfileTitle">Profile</h1>
         <div class="ProfileImaigeField">
             <img class="ProfilePicture" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
-            <div class="TextBox">
+            <div class="ProfileNameField">
                 <h2 class="ProfileName">Ola Nordmann</h2>
                 <h4 class="ProfileStatus">UiA - Student</h4>
             </div>
@@ -24,14 +24,32 @@
                 <h3 class="ProfileCreatedEvents">Created Events</h3>
                 <h3 class="ProfileCreatedEventsNumber">12</h3>
             </div>
-            <div class="JoinedEvents">
+            <div class="ProfileJoinedEvents">
                 <h3 class="ProfileJoinedEvents">Joined Events</h3>
                 <h3 class="ProfileJoinedEventsNumber">8</h3>
             </div>
 
         </div>
-        <button class="EditButton" type="button">Edit</button>
+        <button class="ProfileEditButton" type="button" onclick="editProfile()">Edit</button>
     </div>
+    <div class="ProfileEditField" id="EditProfileField" >
+        <form>
+            <h2>Edit Profile</h2>
+            <div class="PersonalDetailField">
+                <h3 class="PersonalDetailsTitle">Personal Details</h3>
+                <label for="ProfileNameBox">Full Name</label>
+                <input type="text" id="ProfileNameBox">
+                <label for="ProfileStatusBox">Status</label>
+                <input type="text" id="ProfileStatusBox">
 
+            </div>
+        </form>
+    </div>
 </body>
+<script>
+    function editProfile() {
+        document.getElementById('EditProfileField').style.display = "block";
+        document.getElementById('ProfileContainer').style.display = "none";
+    }
+</script>
 </html>
