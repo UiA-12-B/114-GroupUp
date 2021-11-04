@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="StyleMaster.css">
 </head>
 <body>
-    <div class="ProfileContainer" id="ProfileContainer">
+    <section class="ProfileContainer" id="ProfileContainer">
         <h1 class="ProfileTitle">Profile</h1>
         <div class="ProfileImaigeField">
             <img class="ProfilePicture" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
@@ -19,7 +19,7 @@
             <p style="padding: 40px; border: 2px solid black;">Bio</p>
         </div>
         <div class="ProfileEventField">
-            <div class="CreatedEvents">
+            <div class="ProfileCreatedEvents">
                 <h3 class="ProfileCreatedEvents">Created Events</h3>
                 <h3 class="ProfileCreatedEventsNumber">12</h3>
             </div>
@@ -29,9 +29,9 @@
             </div>
         </div>
         <button class="ProfileEditButton" type="button" onclick="editProfile()">Edit</button>
-    </div>
-    <div class="ProfileEditField" id="EditProfileField" style="display:none;">
-        <form>
+    </section>
+    <section class="ProfileEditField" id="EditProfileField" style="display:none;">
+        <form id="EditProfileForm">
             <h2>Edit Profile</h2>
             <div class="PersonalDetailField">
                 <h3 class="PersonalDetailsTitle">Personal Details</h3>
@@ -46,7 +46,7 @@
                 <button class="ProfileEditButton" type="button" onclick="submitProfileEdit()">Submit</button>
             </div>
         </form>
-    </div>
+    </section>
 </body>
 <script>
     function editProfile() {
