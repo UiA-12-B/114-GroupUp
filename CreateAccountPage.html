@@ -5,6 +5,7 @@
     <title>Sign Up</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Epilogue' rel='stylesheet'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
 </head>
 <style>
     body{
@@ -19,6 +20,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        overflow: hidden;
     }
     .logo{
         margin-top: 50px;
@@ -39,20 +41,34 @@
 
     }
     .input-box{
-        max-width: 300px;
+        max-width: 270px;
         width: 100%;
         height: 40px;
-        margin: 5px 0;
-        border-radius: 55px;
+        margin: 8px 0;
+        border-radius: 10px;
         border: none;
         outline: none;
         display: grid;
         grid-template-columns: 15% 85%;
         padding: 0 .4rem;
-        background-color: white;
+        background-color: #F4F5FE;
+        position: relative;
+    }
+    .input-box i{
+        text-align: center;
+        line-height: 40px;
+        color: #A5ABBD;
+        font-size: 1.1rem;
+    }
+    ::placeholder{
+        color: #A5ABBD;
     }
     input{
        font-size: 1.1rem;
+       background: none;
+       border: none;
+       outline: none;
+       line-height: 1;
     }
     input[type='checkbox']{
         width: 30px;
@@ -80,19 +96,10 @@
         font-size: 1.1rem;
         margin-top: 10px;
     }
-    @media (max-width: 870px){
+    @media (max-width: 615px){
         form{
-            min-height: 800px;
-            height: 100vh;
-        }
-        form:before{
-            width: 1000px;
-            height: 1000px;
-            left: 20%;
-            bottom: 60%;
-            transform: translateX(-50%);
-            right: initial;
-            top: initial;
+            flex-direction: column;
+            height: 100%;
         }
     }
 </style>
@@ -101,18 +108,26 @@
         <div class="sign-up-form">
             <img class="logo" src="/Bilder/groupup_logo_hvit.png">
             <h1>Sign Up</h1>
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username" class="input-box" required>
-            <label for="firstname">First Name</label>
-            <input type="text" name="firstname" id="firstname" class="input-box" required>
-            <label for="lastname">Last Name</label>
-            <input type="text" name="lastname" id="lastname" class="input-box" required>
-            <label for="email">Email Address</label>
-            <input type="email" name="email" id="email" class="input-box" required>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" class="input-box" required>
-            <label for="password2">Confirm Password</label>
-            <input type="password" name="password2" id="password2" class="input-box" required>
+            <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" name="username" placeholder="Username" required>
+            </div>
+            <div class="input-box">
+                <i class="far fa-id-card"></i>
+                <input type="text" name="fullname" placeholder="Full Name" required>
+            </div>
+            <div class="input-box">
+                <i class="far fa-at"></i>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <i class="fas fa-unlock-alt"></i>
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="input-box">
+                <i class="fas fa-lock-alt"></i>
+                <input type="password" name="password2" placeholder="Confirm Password" required>
+            </div>
             <label>
                 <input type="checkbox" name="TermsandConditions">I agree to the <a href="#">Terms and Conditions</a>
             </label>
@@ -120,8 +135,6 @@
                 <button type="submit" class="signupbutton">Sign Up</button>
             </div>
             <p>Already have an account? <a href="LoginPage.html">Login</a></p>
-
-
         </div>
     </form>
 </body>
