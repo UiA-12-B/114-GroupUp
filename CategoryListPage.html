@@ -16,6 +16,7 @@
     .mainBody{
         background-color: #3352F3;
         overflow: hidden;
+        height: 100vh;
     }
 
     .mTitle{
@@ -28,60 +29,24 @@
 
     .scrollArea{
         display: flex;
-        border: solid 2px black;
         overflow-x: auto;
+        width: 275px;
+        padding: 50px;
+        margin: auto;
+        scroll-behaviour: smooth;
+        border-top: solid 1px white;
+        border-bottom: solid 1px white;
+        }
 
-        
-          
-    }
-
-    .bx1{
-        height: 250px;
+    .scrollArea .bx{
+        flex: 0 0 300px;
         width: 250px;
+        display: inline flex;
         background-color: #2F2BAA;
         margin: 10px;
         border-radius: 10%;
+        box-shadow: 0 5px 15px 0 rgba(0,0,0, .5);
     }
-
-    .bx2{
-        height: 250px;
-        width: 250px;
-        background-color: #2F2BAA;
-        margin: 10px;
-        border-radius: 10%;
-    }
-
-    .bx3{
-        height: 250px;
-        width: 250px;
-        background-color: #2F2BAA;
-        margin: 10px;
-        border-radius: 10%;
-    }
-
-    .bx4{
-        height: 250px;
-        width: 250px;
-        background-color: #2F2BAA;
-        margin: 10px;
-        border-radius: 10%;
-    }
-
-    .bx5{
-        height: 250px;
-        width: 250px;
-        background-color: #2F2BAA;
-        margin: 10px;
-        border-radius: 10%;
-    }
-
-     .bx6{
-         height: 250px;
-         width: 250px;
-         background-color: #2F2BAA;
-         margin: 10px;
-         border-radius: 10%;
-     }
 
     .iconify{
         padding-top: 50px;
@@ -101,7 +66,8 @@
     .join{
         margin: auto;
         display: block;
-        margin-top: 30px;
+        margin-top: 15px;
+        margin-bottom: 10px;
         padding: 10px;
         padding-left: 20px;
         padding-right: 20px;
@@ -117,48 +83,48 @@
 
 </style>
 <body>
-    <section class="mainBody">
-        <h1 class="mTitle">Categories</h1>
-            <div class="scrollArea">
-                <div class="bx1">
-                    <span class="iconify" data-icon="gg:music" style="color: #f8f8f8;" data-height="60"></span>
-                    <h3 class="uTitle">Music</h3>
-                    <button class="join" type="button">Join</button>
+<section class="mainBody">
+    <h1 class="mTitle">Categories</h1>
+    <div class="scrollArea">
+        <div class="bx">
+            <span class="iconify" data-icon="gg:music" style="color: #f8f8f8;" data-height="60"></span>
+            <h3 class="uTitle">Music</h3>
+            <button class="join" type="button">Join</button>
 
-                </div>
-                <div class="bx1">
-                    <span class="iconify" data-icon="maki:gaming" style="color: #f8f8f8;" data-height="60"></span>
-                    <h3 class="uTitle">Gaming</h3>
-                    <button class="join" type="button">Join</button>
+        </div>
+        <div class="bx">
+            <span class="iconify" data-icon="maki:gaming" style="color: #f8f8f8;" data-height="60"></span>
+            <h3 class="uTitle">Gaming</h3>
+            <button class="join" type="button">Join</button>
 
-                </div>
-                <div class="bx1">
-                    <span class="iconify" data-icon="mdi:party-popper" style="color: #f8f8f8;" data-height="60"></span>
-                    <h3 class="uTitle">Party</h3>
-                    <button class="join" type="button">Join</button>
+        </div>
+        <div class="bx">
+            <span class="iconify" data-icon="mdi:party-popper" style="color: #f8f8f8;" data-height="60"></span>
+            <h3 class="uTitle">Party</h3>
+            <button class="join" type="button">Join</button>
 
-                </div>
-                <div class="bx1">
-                    <span class="iconify" data-icon="gg:gym" style="color: #f8f8f8;" data-height="60"></span>
-                    <h3 class="uTitle">Sport</h3>
-                    <button class="join" type="button">Join</button>
+        </div>
+        <div class="bx">
+            <span class="iconify" data-icon="gg:gym" style="color: #f8f8f8;" data-height="60"></span>
+            <h3 class="uTitle">Sport</h3>
+            <button class="join" type="button">Join</button>
 
-                </div>
-                <div class="bx1">
-                    <span class="iconify" data-icon="bx:bx-camera-movie" style="color: #f8f8f8;" data-height="60"></span>
-                    <h3 class="uTitle">Tv & Movies</h3>
-                    <button class="join" type="button">Join</button>
+        </div>
+        <div class="bx">
+            <span class="iconify" data-icon="bx:bx-camera-movie" style="color: #f8f8f8;" data-height="60"></span>
+            <h3 class="uTitle">Tv & Movies</h3>
+            <button class="join" type="button">Join</button>
 
-                </div>
-                <div class="bx1">
-                    <span class="iconify" data-icon="bx:bx-book-alt" style="color: #f8f8f8;" data-height="60"></span>
-                    <h3 class="uTitle">Studies</h3>
-                    <button class="join" type="button">Join</button>
+        </div>
+        <div class="bx">
+            <span class="iconify" data-icon="bx:bx-book-alt" style="color: #f8f8f8;" data-height="60"></span>
+            <h3 class="uTitle">Studies</h3>
+            <button class="join" type="button">Join</button>
 
-                </div>
-            </div>
+        </div>
+    </div>
 
-    </section>
+</section>
 
 <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>

@@ -7,7 +7,7 @@
 
 </head>
 <body>
-    <div class="ProfileContainer" id="ProfileContainer" style="display:">
+    <div class="ProfileContainer" id="ProfileContainer" style="display:block">
         <h1 class="ProfileTitle">Profile</h1>
         <div class="ProfileImaigeField">
             <img class="ProfilePicture" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
@@ -52,8 +52,8 @@
 </body>
 <script>
     function editProfile() {
-        document.getElementById('EditProfileField').style.display = "block";
         document.getElementById('ProfileContainer').style.display = "none";
+        document.getElementById('EditProfileField').style.display = "block";
     }
 
     function submitProfileEdit(){
