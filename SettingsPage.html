@@ -5,6 +5,7 @@
     <title>Settings</title>
     <link href="StyleMaster.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
+    
 </head>
 <style>
     html {
@@ -21,6 +22,9 @@
         text-align: center;
         color: white;
         font-size: 40px;
+    }
+    h2:hover{
+        color: lightgray;
     }
     a{
         cursor: pointer;
@@ -40,13 +44,34 @@
         <a><h2>Services</h2></a>
         <a><h2>Info</h2></a>
     </div>
-    <div class="navbar">
-        <button><span class="iconify" data-icon="gg:menu" data-height="40"></span></button>
+
+<!--Nav Bar-->
+    <div id="myNav" class="overlay">
+        <div class="overlay-content">
+          <a href="MyActivitiesPage.html">My Activities</a>
+          <a href="CategoryListPage.html">Catagories</a>
+          <a href="ProfilePage.html">Profile</a>
+          <a href="SettingsPage.html">Settings</a>
+          <a onclick="closeNav()" class="close">Close</a>
+          </div>
+    </div>
+    <div class="nav">
+        <button id="open" class="open" onclick="openNav()"><span class="iconify" data-icon="gg:menu" data-height="40"></span></button>
     </div>
 
-   
+<script>
+/* Open */
+function openNav() {
+  document.getElementById("myNav").style.display = "block";
+}
 
-<script src="https://code.iconify.design/2/2.0.3/iconify.min.js">
+/* Close */
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
+}
+
+/* Nav bar end */
 </script>
+<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 </body>
 </html>
