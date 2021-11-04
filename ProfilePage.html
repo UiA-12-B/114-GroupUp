@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <title>ProfilePage</title>
     <link rel="stylesheet" href="StyleMaster.css">
-
 </head>
 <body>
-    <div class="ProfileContainer" id="ProfileContainer" style="display:block">
+    <div class="ProfileContainer" id="ProfileContainer">
         <h1 class="ProfileTitle">Profile</h1>
         <div class="ProfileImaigeField">
             <img class="ProfilePicture" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
@@ -28,7 +27,6 @@
                 <h3 class="ProfileJoinedEvents">Joined Events</h3>
                 <h3 class="ProfileJoinedEventsNumber">8</h3>
             </div>
-
         </div>
         <button class="ProfileEditButton" type="button" onclick="editProfile()">Edit</button>
     </div>
@@ -53,11 +51,11 @@
 <script>
     function editProfile() {
         document.getElementById('ProfileContainer').style.display = "none";
-        document.getElementById('EditProfileField').style.display = "block";
+        document.getElementById('EditProfileField').style.display = "flex";
     }
 
     function submitProfileEdit(){
-        document.getElementById('ProfileContainer').style.display = "block";
+        document.getElementById('ProfileContainer').style.display = "flex";
         document.getElementById('EditProfileField').style.display = "none";
     }
 </script>
