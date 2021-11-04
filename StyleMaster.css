@@ -124,7 +124,7 @@ html{
     text-decoration: none;
     border: none;
 }
-.EditButton:hover{
+.ProfileEditButton:hover{
     border: none;
     background: green;
     box-shadow: 0 0 1px #777;
