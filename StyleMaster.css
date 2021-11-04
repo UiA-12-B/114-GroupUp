@@ -33,7 +33,7 @@ html{
     bottom: 0;
     left: 0;
     background-color: rgba(4, 42, 241, 1);
-  }
+}
 
 .close {
     
@@ -44,7 +44,7 @@ html{
     width: 100%;
     text-align: center;
     margin-top: 30px;
-  }
+}
   
 .overlay a {
     padding: 8px;
@@ -54,64 +54,69 @@ html{
     color: white;
     display: block;
     transition: 0.3s;
-  }
+}
   
 .overlay a:hover, .overlay a:focus {
     color: lightgray;
-  }
+}
   
 .overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
-  }
+}
   
 @media screen and (max-width: 450px) {
     .overlay a {font-size: 28px}
     .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    padding-top: 5px;
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        padding-top: 5px;
     }
-  }
+}
 
-  @media screen and (max-width: 350px) {
+@media screen and (max-width: 350px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    padding-top: 5px;
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        padding-top: 5px;
     }
-  }
+}
 
 .ProfileContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .ProfilePicture{
     border-radius:50%;
     width: 100px;
-
 }
+
 .ProfileImaigeField{
     display: flex;
     flex-direction: row;
 }
+
 .ProfileNameField{
     margin-left: 15px;
 }
+
 .ProfileEventField{
     display: flex;
     flex-direction: row;
     margin-left: 10px;
 }
+
 .ProfileJoinedEvents{
     margin-left: 30px;
 }
+
 .ProfileEditButton{
     background-color: Blue;
     padding: .70rem;
@@ -124,24 +129,27 @@ html{
     text-decoration: none;
     border: none;
 }
+
 .ProfileEditButton:hover{
     border: none;
     background: green;
     box-shadow: 0 0 1px #777;
 }
+
 .ProfileEditField{
     display:flex;
     flex-direction:column;
     align-items:center;
 }
+
 .PersonalDetailField{
     display:flex;
     flex-direction:column;
     align-items: center;
 }
+
 .ProfileEditImageButton{
     width: 75px;
-
 }
 
 
