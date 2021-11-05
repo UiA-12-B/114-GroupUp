@@ -123,8 +123,30 @@
 
         </div>
     </div>
-
+    <div id="myNav" class="overlay">
+            <div class="overlay-content">
+              <a href="MyActivitiesPage.html">My Activities</a>
+              <a href="CategoryListPage.html">Categories</a>
+              <a href="ProfilePage.html">Profile</a>
+              <a href="SettingsPage.html">Settings</a>
+              <a onclick="closeNav()" class="close">Close</a>
+              </div>
+        </div>
+        <div class="nav">
+            <button id="open" class="open" onclick="openNav()"><span class="iconify" data-icon="gg:menu" data-height="40"></span></button>
+        </div>
 </section>
+<script>
+    /* Open */
+    function openNav() {
+      document.getElementById("myNav").style.display = "block";
+    }
+
+    /* Close */
+    function closeNav() {
+      document.getElementById("myNav").style.display = "none";
+    }
+</script>
 <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
