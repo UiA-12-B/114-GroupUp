@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>ProfilePage</title>
-    <link rel="stylesheet" href="StyleMaster.css">
+    <link rel="stylesheet" href="UniqueStyles.css">
+    <link rel="stylesheet" href="GenericStyles.css">
 </head>
 <body>
     <section class="ProfileContainer" id="ProfileContainer">
-        <h1 class="ProfileTitle">Profile</h1>
+        <h1 class="pageTitle">Profile</h1>
         <div class="ProfileImaigeField">
             <img class="ProfilePicture" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
             <div class="ProfileNameField">
-                <h2 class="ProfileName">Ola Nordmann</h2>
-                <h4 class="ProfileStatus">UiA - Student</h4>
+                <p class="ProfileName">Ola Nordmann</p>
+                <p class="ProfileStatus">UiA - Student</p>
             </div>
         </div>
         <div class="ProfileInformationField">
@@ -28,7 +29,7 @@
                 <h3 class="ProfileJoinedEventsNumber">8</h3>
             </div>
         </div>
-        <button class="ProfileEditButton" type="button" onclick="editProfile()">Edit</button>
+        <button class="button" type="button" onclick="editProfile()">Edit</button>
     </section>
     <section class="ProfileEditField" id="EditProfileField" style="display:none;">
         <form id="EditProfileForm">

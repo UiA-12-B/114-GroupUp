@@ -1,0 +1,74 @@
+.ProfileContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ProfilePicture{
+    border-radius:50%;
+    width: 100px;
+}
+
+.ProfileImaigeField{
+    display: flex;
+    flex-direction: row;
+}
+
+.ProfileNameField{
+    margin-left: 15px;
+}
+
+.ProfileEventField{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+.ProfileJoinedEvents{
+    margin-left: 30px;
+}
+
+.ProfileEditField{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.PersonalDetailField{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.ProfileEditImageButton{
+    width: 75px;
+}
+
+.MyActivitiesContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MyActivitiesCategoryBox{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MyActivitiesJoinedEventField{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MyActivitiesMyEventsField{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CategoriesBody{
+    overflow: hidden;
+    height: 100vh;
+}
