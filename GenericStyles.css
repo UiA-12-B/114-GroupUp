@@ -21,6 +21,22 @@ html{
     font-weight: 700;
 }
 
+.eventTitle{
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.categoryTitle{
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+}
+
 .button{
     margin: auto;
     display: block;
