@@ -9,9 +9,16 @@ html{
 .pageTitle{
     color: white;
     text-align: center;
-    padding: 75px;
+    padding: 25px;
     font-weight: 700;
     font-size: 50px;
+}
+
+.subTitle{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .button{
