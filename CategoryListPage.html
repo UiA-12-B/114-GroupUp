@@ -48,6 +48,30 @@
         font-weight: 700;
         font-size: 25px;
     }
+
+    .navC button {
+        position: absolute;
+        color: white;
+        height: 60px;
+        width: 80px;
+        border-radius: 14px;
+        font-size: 20px;
+        text-decoration: none;
+        box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5);
+        background-color: rgba(57, 57, 244, 1);
+        bottom: 0;
+        left: 50%;
+        border: none;
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+        margin-bottom: -20px;
+    }
+
+    #ico{
+    margin-top: -50px;
+    }
+
+
 </style>
 <body>
 <section class="CategoriesBody">
@@ -99,8 +123,8 @@
               <a onclick="closeNav()" class="close">Close</a>
               </div>
         </div>
-        <div class="nav">
-            <button id="open" class="open" onclick="openNav()"><span class="iconify" data-icon="gg:menu" data-height="40"></span></button>
+        <div class="navC">
+            <button id="open" class="open" onclick="openNav()"><span id="ico" class="iconify" data-icon="gg:menu" data-height="40"></span></button>
         </div>
 </section>
 <script>
