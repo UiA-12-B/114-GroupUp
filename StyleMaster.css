@@ -1,9 +1,11 @@
+/* Nav bar css*/
+
 .nav {
 
 }
 
 .nav button {
-    position: absolute;
+    position: fixed;
     color: white;
     height: 60px;
     width: 80px;
@@ -30,9 +32,6 @@
     background-color: rgba(4, 42, 241, 1);
 }
 
-.close {
-    
-}
   
 .overlay-content {
     position: relative;
@@ -81,3 +80,5 @@
         padding-top: 5px;
     }
 }
+
+/* Nav bar css slutt*/
