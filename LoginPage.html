@@ -2,79 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GroupUpLogIn</title>
+    <title>LogIn</title>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body{
-            background-color: #687EF4;
+            background-color: #658DF3;
             color: white;
             font-family: 'Epilogue';
             font-weight: 400;
         }
-        .h1login{
-            font-size: 70px;
+        .form{
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            margin-top: 0px;
+            overflow: hidden;
         }
-        .loginimage{
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: auto;
-            display: block;
+         .logo{
+            width: 137px;
+            height: 137px;
+            margin-top: 50px;
         }
-        .logincontainer{
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 10px;
-            width: 350px;
-            display: block;
-            padding: 10px;
-            font-size: 25px;
-            text-align: center;
-        }
-        .logincontainer input{
-            font-size: 25px;
-            padding: 10px;
-            border-radius: 50px;
-            border: white solid;
-            font-family: Epilogue;
-            font-weight: 400;
-        }
-        .loginbutton{
-            font-size: 35px;
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-            padding: 10px;
-            background-color: darkblue;
+        h1{
             color: white;
-            border: darkblue solid;
+            font-size: 2.5rem;
+        }
+        .input-box{
+            max-width: 270px;
+            width: 100%;
+            height: 40px;
+            margin: 8px 0;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            display: grid;
+            grid-template-columns: 15% 85%;
+            padding: 0 .4rem;
+            background-color: #F4F5FE;
+            position: relative;
+        }
+        .input-box:hover{
+            border: 3px solid #0079f4;
+        }
+        .input-box i{
+            text-align: center;
+            line-height: 40px;
+            color: #A5ABBD;
+            font-size: 1.1rem;
+        }
+        ::placeholder{
+            color: #A5ABBD;
+        }
+        input{
+            font-size: 1.1rem;
+            background: none;
+            border: none;
+            outline: none;
+            line-height: 1;
+        }
+        input[type='checkbox']{
+            width: 30px;
+            height: 16px;
+            margin-top: 5px;
+        }
+        .button{
+            margin: 30px 0;
+            width: 150px;
+            height: 50px;
             border-radius: 50px;
-            font-family: Epilogue;
-            font-weight: 400;
+            border: none;
+            background-color: #0079f4;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .5s;
+        }
+        .button:hover{
+            background-color: #3939f4;
+        }
+        p{
+            color: white;
+            font-size: 1rem;
+            margin-top: 5px;
         }
     </style>
 </head>
 <body>
-<img class="loginimage" src="Bilder/groupup_logo_hvit.png" height="300" width="300"/>
-<h1 class="h1login"> GroupUp </h1>
 <form>
-    <div class="logincontainer">
-        <input type="text" placeholder="Enter Username" name="username" required>
-        <br>
-        <br>
-        <input type="password" placeholder="Enter Password" name="password" required>
-        <br>
-        <br>
-        Forgot  your <a href="#"> password? </a>
-        <br>
-        <br>
-        <button class="loginbutton" type="submit">Login</button>
-        <br>
-        Remember my account <input type="checkbox" checked="checked">
-        <br>
-        <br>
-        Create a <a href="CreateAccountPage.html"> new account</a>
+    <div class="form">
+        <img class="logo" src="Bilder/groupup_logo_hvit.png"/>
+        <h1>Sign In</h1>
+        <div class="input-box">
+            <i class="fas fa-user"></i>
+            <input type="text" name="username" placeholder="Username" required>
+        </div>
+        <div class="input-box">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password" placeholder="Password" required>
+        </div>
+        <p>Forgot your <a href="#">password?</a></p>
+        <label>
+            <input type="checkbox" name="rememberaccount">Remember my account
+        </label>
+        <button type="submit" class="button">Sign In</button>
+        <p>Doesn't have an account? <a href="CreateAccountPage.html"> Sign Up here.</a></p>
     </div>
 </form>
 

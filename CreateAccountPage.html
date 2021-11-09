@@ -12,8 +12,9 @@
         background-color: #658DF3;
         font-family: 'Epilogue';
         font-weight: 400;
+        color: white;
     }
-    .sign-up-form{
+    .form{
         padding: 5px;
         display: flex;
         flex-direction: column;
@@ -26,19 +27,16 @@
         margin-top: 50px;
         width: 137px;
         height: 137px;
-        display: block;
     }
-    h1 {
+    h1{
         color: white;
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
-    label{
-        font-size: 1.1rem;
-        padding: 0.5em;
-        margin-top: 5px;
-        margin-bottom: -5px;
+    h4{
         color: white;
-
+        font-size: 1rem;
+        margin-top: -5px;
+        margin-bottom: 15px;
     }
     .input-box{
         max-width: 270px;
@@ -74,11 +72,12 @@
        line-height: 1;
     }
     input[type='checkbox']{
-        width: 30px;
-        height: 16px;
-        margin-top: 5px;
+        width: 27px;
+        height: 15px;
+        margin-top: 8px;
     }
-    .signupbutton{
+
+    .button{
         margin: 30px 0;
         width: 150px;
         height: 50px;
@@ -91,13 +90,13 @@
         cursor: pointer;
         transition: .5s;
     }
-    .signupbutton:hover{
+    .button:hover{
         background-color: #3939f4;
     }
     p{
         color: white;
-        font-size: 1.1rem;
-        margin-top: 10px;
+        font-size: 1rem;
+        margin-top: 5px;
     }
     @media (max-width: 615px){
         form{
@@ -108,9 +107,10 @@
 </style>
 <body>
     <form>
-        <div class="sign-up-form">
+        <div class="form">
             <img class="logo" src="/Bilder/groupup_logo_hvit.png">
             <h1>Sign Up</h1>
+            <h4>Please fill in this form to create an account!</h4>
             <div class="input-box">
                 <i class="fas fa-user"></i>
                 <input type="text" name="username" placeholder="Username" required>
@@ -134,10 +134,8 @@
             <label>
                 <input type="checkbox" name="TermsandConditions">I agree to the <a href="#">Terms and Conditions</a>
             </label>
-            <div class="button">
-                <button type="submit" class="signupbutton">Sign Up</button>
-            </div>
-            <p>Already have an account? <a href="LoginPage.html">Login</a></p>
+            <button type="submit" class="button">Sign Up</button>
+            <p>Already have an account? <a href="LoginPage.html">Sign in here</a></p>
         </div>
     </form>
 </body>
