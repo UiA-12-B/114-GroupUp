@@ -51,5 +51,11 @@ html{
     cursor: pointer;
     color: white;
     box-shadow: 0px 3px 5px black;
+    font-weight: bold;
+}
+
+.button:hover{
+    color: #717171;
+    transition: 0.5s;
 }
 
