@@ -5,6 +5,9 @@
     <title>ProfilePage</title>
     <link rel="stylesheet" href="UniqueStyles.css">
     <link rel="stylesheet" href="GenericStyles.css">
+    <link rel="stylesheet" href="StyleMaster.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <section class="ProfileContainer" id="ProfileContainer">
@@ -48,6 +51,21 @@
             </div>
         </form>
     </section>
+
+<!--Nav Bar-->
+<div id="exit" class="overlay2" onclick="closeNav()"></div>
+<div id="myNav" class="overlay">
+    <div class="overlay-content">
+      <a href="MyActivitiesPage.html">My Activities</a>
+      <a href="CategoryListPage.html">Categories</a>
+      <a href="ProfilePage.html">Profile</a>
+      <a href="SettingsPage.html">Settings</a>
+      <a onclick="closeNav()" class="close">Close</a>
+    </div>
+</div>
+<div class="nav">
+    <button id="open" class="open" onclick="openNav()"><span class="iconify" data-icon="gg:menu" data-height="40"></span></button>
+    
 </body>
 <script>
     function editProfile() {
@@ -59,5 +77,20 @@
         document.getElementById('ProfileContainer').style.display = "flex";
         document.getElementById('EditProfileField').style.display = "none";
     }
+
+    /* Open */
+    function openNav() {
+    document.getElementById("myNav").style.display = "block";
+    document.getElementById("exit").style.display = "block";
+    }
+
+    /* Close */
+    function closeNav() {
+    document.getElementById("myNav").style.display = "none";
+    document.getElementById("exit").style.display = "none";
+    }
+
 </script>
+
+<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 </html>

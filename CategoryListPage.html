@@ -160,7 +160,7 @@
         <span class="dot" onclick="currentSlide(5)"></span>
         <span class="dot" onclick="currentSlide(6)"></span>
     </div>
-
+    <div id="exit" class="overlay2" onclick="closeNav()"></div>
     <div id="myNav" class="overlay">
             <div class="overlay-content">
               <a href="MyActivitiesPage.html">My Activities</a>
@@ -177,12 +177,14 @@
 <script>
     /* Open */
     function openNav() {
-      document.getElementById("myNav").style.display = "block";
+    document.getElementById("myNav").style.display = "block";
+    document.getElementById("exit").style.display = "block";
     }
 
     /* Close */
     function closeNav() {
-      document.getElementById("myNav").style.display = "none";
+    document.getElementById("myNav").style.display = "none";
+    document.getElementById("exit").style.display = "none";
     }
 
     /*slide funksjon*/
