@@ -42,7 +42,10 @@
     background-color: rgba(4, 44, 241, 0.247);
 }
 
-  
+.overlay h1 {
+    color: white;
+}
+
 .overlay-content {
     position: relative;
     width: 100%;

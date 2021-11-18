@@ -86,24 +86,6 @@
         text-align: center;
     }
 
-    .navC button {
-        position: absolute;
-        color: white;
-        height: 60px;
-        width: 80px;
-        border-radius: 14px;
-        font-size: 20px;
-        text-decoration: none;
-        box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5);
-        background-color: rgba(57, 57, 244, 1);
-        bottom: 0;
-        left: 50%;
-        border: none;
-        cursor: pointer;
-        transform: translate(-50%, -50%);
-        margin-bottom: -30px;
-    }
-
     #ico{
     margin-top: -50px;
     }
@@ -170,8 +152,21 @@
               <a onclick="closeNav()" class="close">Close</a>
               </div>
         </div>
-        <div class="navC">
-            <button id="open" class="open" onclick="openNav()"><span id="ico" class="iconify" data-icon="gg:menu" data-height="40"></span></button>
+
+        <div id="exitC" class="overlay2" onclick="closeCreate()"></div>
+        <div id="myCreate" class="overlay">
+            <div class="overlay-content">
+              <h1>Create Event</h1>
+        
+              <a onclick="closeCreate()" class="close" style="cursor: pointer;">Close</a>
+            </div>
+        </div>
+        <div class="nav">
+            <a href="MyActivitiesPage.html"><button style="margin-right: 20px;" id="open" class="open"><span class="iconify" data-icon="el:group" data-height="40"></span></button></a>
+
+            <button id="open" class="open" onclick="openNav()"><span class="iconify" data-icon="gg:menu" data-height="40"></span></button>
+            
+            <button id="open" class="open" onclick="openCreate()" style="margin-left: 20px;"><span class="iconify" data-icon="gg:math-plus" data-height="40"></span></button>
         </div>
 </section>
 <script>
@@ -185,6 +180,18 @@
     function closeNav() {
     document.getElementById("myNav").style.display = "none";
     document.getElementById("exit").style.display = "none";
+    }
+
+    /* Open */
+    function openCreate() {
+    document.getElementById("myCreate").style.display = "block";
+    document.getElementById("exitC").style.display = "block";
+    }
+
+    /* Close */
+    function closeCreate() {
+    document.getElementById("myCreate").style.display = "none";
+    document.getElementById("exitC").style.display = "none";
     }
 
     /*slide funksjon*/
@@ -210,11 +217,6 @@
 
 
 </script>
-<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 </body>
 </html>

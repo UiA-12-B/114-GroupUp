@@ -51,12 +51,26 @@
       <a href="CategoryListPage.html">Categories</a>
       <a href="ProfilePage.html">Profile</a>
       <a href="SettingsPage.html">Settings</a>
-      <a onclick="closeNav()" class="close">Close</a>
+      <a onclick="closeNav()" class="close" style="cursor: pointer;">Close</a>
     </div>
 </div>
+
+<div id="exitC" class="overlay2" onclick="closeCreate()"></div>
+<div id="myCreate" class="overlay">
+    <div class="overlay-content">
+      <h1>Create Event</h1>
+
+      <a onclick="closeCreate()" class="close" style="cursor: pointer;">Close</a>
+    </div>
+</div>
+
 <div class="nav">
+    <a href="CategoryListPage.html"><button style="margin-right: 20px;" id="open" class="open"><span class="iconify" data-icon="el:group" data-height="40"></span></button></a>
+
     <button id="open" class="open" onclick="openNav()"><span class="iconify" data-icon="gg:menu" data-height="40"></span></button>
     
+    <button id="open" class="open" onclick="openCreate()" style="margin-left: 20px;"><span class="iconify" data-icon="gg:math-plus" data-height="40"></span></button>
+
 <script>
 /* Open */
 function openNav() {
@@ -71,6 +85,20 @@ document.getElementById("exit").style.display = "none";
 }
 
 /* Nav bar end */
+
+/* Open */
+function openCreate() {
+document.getElementById("myCreate").style.display = "block";
+document.getElementById("exitC").style.display = "block";
+}
+
+/* Close */
+function closeCreate() {
+document.getElementById("myCreate").style.display = "none";
+document.getElementById("exitC").style.display = "none";
+}
+
+
 </script>
 <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 </body>
