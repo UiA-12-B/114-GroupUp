@@ -79,7 +79,7 @@
 
     }
 
-    .iconify{
+    .iconify2{
         padding-top: 50px;
         display: block;
         margin: auto;
@@ -95,37 +95,37 @@
     <h1 class="pageTitle">Categories</h1>
     <div class="scrollArea">
         <div class="bx">
-            <span class="iconify" data-icon="gg:music" style="color: #f8f8f8;" data-height="60"></span>
+            <span class="iconify2" data-icon="gg:music" style="color: #f8f8f8;" data-height="60"></span>
             <h3 class="categoryTitle">Music</h3>
             <button class="button" type="button">Join</button>
 
         </div>
         <div class="bx">
-            <span class="iconify" data-icon="maki:gaming" style="color: #f8f8f8;" data-height="60"></span>
+            <span class="iconify2" data-icon="maki:gaming" style="color: #f8f8f8;" data-height="60"></span>
             <h3 class="categoryTitle">Gaming</h3>
             <button class="button" type="button">Join</button>
 
         </div>
         <div class="bx">
-            <span class="iconify" data-icon="mdi:party-popper" style="color: #f8f8f8;" data-height="60"></span>
+            <span class="iconify2" data-icon="mdi:party-popper" style="color: #f8f8f8;" data-height="60"></span>
             <h3 class="categoryTitle">Party</h3>
             <button class="button" type="button">Join</button>
 
         </div>
         <div class="bx">
-            <span class="iconify" data-icon="gg:gym" style="color: #f8f8f8;" data-height="60"></span>
+            <span class="iconify2" data-icon="gg:gym" style="color: #f8f8f8;" data-height="60"></span>
             <h3 class="categoryTitle">Sport</h3>
             <button class="button" type="button">Join</button>
 
         </div>
         <div class="bx">
-            <span class="iconify" data-icon="bx:bx-camera-movie" style="color: #f8f8f8;" data-height="60"></span>
+            <span class="iconify2" data-icon="bx:bx-camera-movie" style="color: #f8f8f8;" data-height="60"></span>
             <h3 class="categoryTitle">Tv & Movies</h3>
             <button class="button" type="button">Join</button>
 
         </div>
         <div class="bx">
-            <span class="iconify" data-icon="bx:bx-book-alt" style="color: #f8f8f8;" data-height="60"></span>
+            <span class="iconify2" data-icon="bx:bx-book-alt" style="color: #f8f8f8;" data-height="60"></span>
             <h3 class="categoryTitle">Studies</h3>
             <button class="button" type="button">Join</button>
         </div>
@@ -153,14 +153,57 @@
               </div>
         </div>
 
-        <div id="exitC" class="overlay2" onclick="closeCreate()"></div>
-        <div id="myCreate" class="overlay">
-            <div class="overlay-content">
-              <h1>Create Event</h1>
-        
-              <a onclick="closeCreate()" class="close" style="cursor: pointer;">Close</a>
-            </div>
+        <div id="exitC" class="overlay4" onclick="closeCreate()"></div>
+<div id="myCreate" class="overlay3">
+    <div class="overlay-content">
+      <h1>Create Event</h1>
+      <form>
+          <label for="name">Event Name</label>
+          <p></p>
+          <input type="text" name="name" id="name">
+            <p></p>
+        <div class="side">
+          <label for="date">Date</label>
+          <p></p>
+          <input type="date" name="date" id="date">
         </div>
+        <div class="side">
+          <label for="time">Time</label>
+          <p></p>
+          <input type="time" name="time" id="time">
+        </div>
+            <p></p>
+        <div class="side">
+          <label for="slots">Slots</label>
+          <p></p>
+          <input type="number" name="slots" id="slots" value="1">
+        </div>
+        <div class="side">
+          <label for="catagory">Catagory</label>
+          <p></p>
+          <select id="catagory" name="catagory">
+            <option value="music">Music</option>
+            <option value="gaming">Gaming</option>
+            <option value="party">Party</option>
+            <option value="sport">Sport</option>
+            <option value="tvm">TV & Movies</option>
+            <option value="studies">Studies</option>
+          </select>
+        </div>
+            <p></p>
+          <label for="location">Location</label>
+          <p></p>
+          <input type="text" name="location" id="location">
+          <p></p>
+          <label for="desc">Description</label>
+          <p></p>
+          <input type="text" name="location" id="location">
+      </form>
+      <p></p>
+      <button onclick="closeCreate()" class="submit">Close</button> <button class="submit" type="submit">Submit</button>
+    </div>
+</div>
+
         <div class="nav">
             <a href="MyActivitiesPage.html"><button style="margin-right: 20px;" id="open" class="open"><span class="iconify" data-icon="el:group" data-height="40"></span></button></a>
 

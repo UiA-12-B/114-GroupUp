@@ -42,7 +42,28 @@
     background-color: rgba(4, 44, 241, 0.247);
 }
 
-.overlay h1 {
+.overlay3 {
+    height: 90%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(4, 42, 241, 1);
+}
+.overlay4 {
+    height: 10%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(4, 44, 241, 0.247);
+}
+
+.overlay3 h1 {
     color: white;
 }
 
@@ -54,6 +75,16 @@
 }
   
 .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    padding-top: 20px;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay3 a {
     padding: 8px;
     text-decoration: none;
     padding-top: 20px;
@@ -97,6 +128,50 @@
         right: 35px;
         padding-top: 5px;
     }
+}
+
+label {
+    color: white;
+    display: inline-flex;
+    font-size: 30px;
+}
+
+.side {
+    display: inline-block;
+}
+
+input {
+    background-color: rgb(94, 112, 199);
+    color: rgb(179, 179, 179);
+    padding: 2px 2px;
+    border-radius: 20px;
+    border:none;
+    font-size: 20px;
+    text-align: center;
+}
+
+select {
+    background-color: rgb(94, 112, 199);
+    color: rgb(179, 179, 179);
+    padding: 2px 2px;
+    border-radius: 20px;
+    border:none;
+    font-size: 20px;
+    text-align: center;
+}
+
+.submit{
+    display: inline-block;
+    color: white;
+    height: 60px;
+    width: auto;
+    border-radius: 14px;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(57, 57, 244, 1);
+    border: none;
+    cursor: pointer;
 }
 
 /* Nav bar css slutt*/
