@@ -91,57 +91,96 @@
     }
 </style>
 <body>
-<section class="CategoriesBody">
-    <h1 class="pageTitle">Categories</h1>
-    <div class="scrollArea">
-        <div class="bx">
-            <span class="iconify2" data-icon="gg:music" style="color: #f8f8f8;" data-height="60"></span>
-            <h3 class="categoryTitle">Music</h3>
-            <button class="button" type="button">Join</button>
 
+    <section class="section section-1">
+        <div class="container">
+            <div class="card">
+                <div class="info">
+                    <h2 class='console-container'>Music</h2>
+                    <div style="text-align: center;">
+                        <a href=""><button class="view">View</button></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="bx">
-            <span class="iconify2" data-icon="maki:gaming" style="color: #f8f8f8;" data-height="60"></span>
-            <h3 class="categoryTitle">Gaming</h3>
-            <button class="button" type="button">Join</button>
+    </section>
 
+    <section class="section section-1">
+        <div class="container">
+            <div class="card">
+                <div class="info">
+                    <h2 class='console-container'>Gaming</h2>
+                </div>
+                <div style="text-align: center;">
+                    <a href="GamesPage.html"><button class="view" >View</button></a>
+                </div>
+            </div>
         </div>
-        <div class="bx">
-            <span class="iconify2" data-icon="mdi:party-popper" style="color: #f8f8f8;" data-height="60"></span>
-            <h3 class="categoryTitle">Party</h3>
-            <button class="button" type="button">Join</button>
+    </section>
 
+    <section class="section section-1">
+        <div class="container">
+            <div class="card">
+                <div class="info">
+                    <h2 class='console-container'>Party</h2>
+                    <div style="text-align: center;">
+                        <a href=""><button class="view">View</button></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="bx">
-            <span class="iconify2" data-icon="gg:gym" style="color: #f8f8f8;" data-height="60"></span>
-            <h3 class="categoryTitle">Sport</h3>
-            <button class="button" type="button">Join</button>
+    </section>
 
+    <section class="section section-1">
+        <div class="container">
+            <div class="card">
+                <div class="info">
+                    <h2 class='console-container'>Sport</h2>
+                    <div style="text-align: center;">
+                        <a href=""><button class="view">View</button></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="bx">
-            <span class="iconify2" data-icon="bx:bx-camera-movie" style="color: #f8f8f8;" data-height="60"></span>
-            <h3 class="categoryTitle">Tv & Movies</h3>
-            <button class="button" type="button">Join</button>
+    </section>
 
+    <section class="section section-1">
+        <div class="container">
+            <div class="card">
+                <div class="info">
+                    <h2 class='console-container'>Tv & Movies</h2>
+                    <div style="text-align: center;">
+                        <a href=""><button class="view">View</button></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="bx">
-            <span class="iconify2" data-icon="bx:bx-book-alt" style="color: #f8f8f8;" data-height="60"></span>
-            <h3 class="categoryTitle">Studies</h3>
-            <button class="button" type="button">Join</button>
+    </section>
+
+    <section class="section section-1">
+        <div class="container">
+            <div class="card">
+                <div class="info">
+                    <h2 class='console-container'>Studies</h2>
+                    <div style="text-align: center;">
+                        <a href=""><button class="view">View</button></a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+    <div class="dots">
+        <a class="forrige" onclick="pluskort(-1)">&#10094;</a>
+        <span class="dot" style="background-color: #FFC1B3;" onclick="visKort(1)"></span>
+        <span class="dot" style="background-color: #E5D360;" onclick="visKort(2)"></span>
+        <span class="dot" style="background-color: #2DC193;" onclick="visKort(3)"></span>
+        <span class="dot" style="background-color: #BAFFFB;" onclick="visKort(4)"></span>
+        <span class="dot" style="background-color: #32ADFF;" onclick="visKort(5)"></span>
+        <span class="dot" style="background-color: #FFA5F8;" onclick="visKort(6)"></span>
+        <a class="neste" onclick="pluskort(1)">&#10095;</a>
     </div>
-
-    <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlide(1)">&#10095;</a>
-
-    <div class="dotContainer">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-    </div>
+    
+    
     <div id="exit" class="overlay2" onclick="closeNav()"></div>
     <div id="myNav" class="overlay">
             <div class="overlay-content">
@@ -261,5 +300,68 @@
 
 </script>
 <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+<script>
+    var KortIndex = 1;
+    visKort(KortIndex);
+
+    function pluskort(n) {
+        visKort(KortIndex += n);
+    }
+
+    function vistKort(n) {
+        visKort(KortIndex = n);
+    }
+
+    function visKort(n) {
+        var i;
+        var cards = document.getElementsByClassName("container");
+        var dots = document.getElementsByClassName("dot");
+        if (n > cards.length) {KortIndex = 1}
+        if (n < 1) {KortIndex = cards.length}
+        for (i = 0; i < cards.length; i++) {
+            cards[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        cards[KortIndex-1].style.display = "block";
+        dots[KortIndex-1].className += " active";
+    }
+    // Får tak i knappen som åpner modalen
+    var btn = document.querySelectorAll("button.modal-button");
+
+    // Får tak i alle modals
+    var modals = document.querySelectorAll('.modal');
+
+    // Får ta i span element
+    var spans = document.getElementsByClassName("lukk");
+
+    // Åpner modal referert i knapp
+    for (var i = 0; i < btn.length; i++) {
+        btn[i].onclick = function(e) {
+            e.preventDefault();
+            modal = document.querySelector(e.target.getAttribute("href"));
+            modal.style.display = "block";
+        }
+    }
+
+    // Lukker element når du trykker på x (Bruker ikke denne)
+    for (var i = 0; i < spans.length; i++) {
+        spans[i].onclick = function() {
+            for (var index in modals) {
+                if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+            }
+        }
+    }
+
+    // Lukkes når du trykker utenfor modal
+    window.onclick = function(event) {
+        if (event.target.classList.contains('modal')) {
+            for (var index in modals) {
+                if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+            }
+        }
+    }
+</script>
 </body>
 </html>
