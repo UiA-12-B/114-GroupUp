@@ -13,7 +13,7 @@
     <h1 class="pageTitle">Gaming</h1>
     <h2 class="subTitle"> Popular Events</h2>
     <div class="scrollArea">
-        <div class="bx" onclick="TEST()">
+        <a class="bx" href="#GP1">
             <div class="box">
             <h3>Test Event</h3>
             </div>
@@ -21,55 +21,48 @@
             <p>DATE</p>
             <p>TIME</p>
             <p>PLACE</p>
-        </div>
-        <div class="bx" onclick="TEST()">
+        </a>
+        <a class="bx" href="#GP2">
             <div class="box">
-            <h3>Test Event</h3>
+            <h3>Test Event 2</h3>
             </div>
             <br>
             <p>DATE</p>
             <p>TIME</p>
             <p>PLACE</p>
-        </div>
-        <div class="bx" onclick="TEST()">
-            <div class="box">
-            <h3>Test Event</h3>
-            </div>
-            <br>
-            <p>DATE</p>
-            <p>TIME</p>
-            <p>PLACE</p>
-        </div>
-        <div class="bx" onclick="TEST()">
-            <div class="box">
-            <h3>Test Event</h3>
-            </div>
-            <br>
-            <p>DATE</p>
-            <p>TIME</p>
-            <p>PLACE</p>
-        </div>
-        <div class="bx" onclick="TEST()">
-            <div class="box">
-            <h3>Test Event</h3>
-            </div>
-            <br>
-            <p>DATE</p>
-            <p>TIME</p>
-            <p>PLACE</p>
-        </div>
-        <div class="bx" onclick="TEST()">
-            <div class="box">
-            <h3>Test Event</h3>
-            </div>
-            <br>
-            <p>DATE</p>
-            <p>TIME</p>
-            <p>PLACE</p>
-        </div>
+        </a>
     </div>
 
 </section>
+
+<div id="GP1" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="lukk"></span>
+        <!--Skriv litt om deg selv-->
+        <h1>TEST</h1>
+        <div class="info">
+            <li style="border-bottom: 2px solid black;"><span class="bold-ottar">TEST:</span> TEST </li>
+        </div>
+    </div>
+
+</div>
+
+<div id="GP2" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="lukk"></span>
+        <!--Skriv litt om deg selv-->
+        <h1>TEST2</h1>
+        <div class="info">
+            <li style="border-bottom: 2px solid black;"><span class="bold-ottar">TEST:</span> TEST </li>
+        </div>
+    </div>
+
+</div>
+
 <section class="mainBody">
     <h2 class="subTitle"> All Events</h2>
     <div class="scrollArea">
@@ -158,10 +151,42 @@
     
 </script>
 <script>
-    function TEST() {
-      alert("Kortet funker :)");
+    // Får tak i knappen som åpner modalen
+    var btn = document.querySelectorAll("a.bx");
+
+    // Får tak i alle modals
+    var modals = document.querySelectorAll('.modal');
+
+    // Får ta i span element
+    var spans = document.getElementsByClassName("lukk");
+
+    // Åpner modal referert i knapp
+    for (var i = 0; i < btn.length; i++) {
+        btn[i].onclick = function(e) {
+            e.preventDefault();
+            modal = document.querySelector(e.target.getAttribute("href"));
+            modal.style.display = "block";
+        }
     }
-    </script>
+
+    // Lukker element når du trykker på x (Bruker ikke denne)
+    for (var i = 0; i < spans.length; i++) {
+        spans[i].onclick = function() {
+            for (var index in modals) {
+                if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+            }
+        }
+    }
+
+    // Lukkes når du trykker utenfor modal
+    window.onclick = function(event) {
+        if (event.target.classList.contains('modal')) {
+            for (var index in modals) {
+                if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+            }
+        }
+    }
+</script>
 <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 </body>
 </html>
