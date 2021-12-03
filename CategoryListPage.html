@@ -196,7 +196,7 @@
 <div id="myCreate" class="overlay3">
     <div class="overlay-content">
       <h1>Create Event</h1>
-      <form>
+      <form id="add-event" action="javascript:saveData();">
           <label for="name">Event Name</label>
           <p></p>
           <input type="text" name="name" id="name">
@@ -236,10 +236,10 @@
           <p></p>
           <label for="desc">Description</label>
           <p></p>
-          <input type="text" name="location" id="location">
+          <input type="text" name="desc" id="desc">
       </form>
       <p></p>
-      <button onclick="closeCreate()" class="submit">Close</button> <button class="submit" type="submit">Submit</button>
+      <button onclick="closeCreate()" class="submit">Close</button> <button class="submit" type="submit" id="submit">Submit</button>
     </div>
 </div>
 
@@ -363,5 +363,44 @@
         }
     }
 </script>
+<script>
+
+    const button = document.getElementById('submit')
+    const iname = document.getElementById('name')
+    const idate = document.getElementById('date')
+    const itime = document.getElementById('time')
+    const islots = document.getElementById('slots')
+    const icatagory = document.getElementById('catagory')
+    const ilocation = document.getElementById('location')
+    const idescription = document.getElementById('desc')
+
+    button.onclick = function (){
+        const name = iname.value;
+        const date = idate.value;
+        const time = itime.value;
+        const slots = islots.value;
+        const catagory = icatagory.value;
+        const location = ilocation.value;
+        const desc = idescription.value;
+
+        const event = {
+            Name: name,
+            Date: date,
+            Time: time,
+            Slots: slots,
+            Catagory: catagory,
+            Location: location,
+            Description: desc,
+        };
+
+
+        if (name && date && time && slots && catagory && location && desc) {
+            localStorage.setItem(name,JSON.stringify(event));
+        } else {
+            alert("Not all fields are filled")
+        }
+    };
+
+    </script>
 </body>
 </html>

@@ -59,7 +59,7 @@
 <div id="myCreate" class="overlay3">
     <div class="overlay-content">
       <h1>Create Event</h1>
-      <form>
+      <form id="add-event">
           <label for="name">Event Name</label>
           <p></p>
           <input type="text" name="name" id="name">
@@ -99,7 +99,7 @@
           <p></p>
           <label for="desc">Description</label>
           <p></p>
-          <input type="text" name="location" id="location">
+          <input type="text" name="desc" id="desc">
       </form>
       <p></p>
       <button onclick="closeCreate()" class="submit">Close</button> <button class="submit" type="submit">Submit</button>
@@ -145,5 +145,6 @@ document.getElementById("exitC").style.display = "none";
 
 </script>
 <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+<script type="module" src="Javascript/Database.js"></script>
 </body>
 </html>

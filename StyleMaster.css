@@ -363,6 +363,18 @@ p {
     border-radius: 30px;
     padding: 0 5rem;
     box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0 0 50px rgba(0,0,0,0.2);
-    background: rgb(56, 56, 56);
+    background: white;
+    color: black;
+}
+
+.info{
+    text-align: center;
+}
+.info span{
+    font-size: 1em;
+    padding : 1rem 0;
     color: white;
+    text-align: center;
+    top: -100px;
+    z-index: 1;
 }
