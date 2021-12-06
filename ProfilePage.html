@@ -10,12 +10,13 @@
 
 </head>
 <body>
+<!--My Profile Page Start-->
     <section class="ProfileContainer" id="ProfileContainer">
         <h1 class="pageTitle">Profile</h1>
-        <div class="ProfileImaigeField">
+        <div class="ProfileImageField">
             <img class="ProfilePicture" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
             <div class="ProfileNameField">
-                <p class="ProfileName">Ola Nordmann</p>
+                <p class="ProfileName">Ulrik Hannsen</p>
                 <p class="ProfileStatus">UiA - Student</p>
             </div>
         </div>
@@ -34,23 +35,27 @@
         </div>
         <button class="button" type="button" onclick="editProfile()">Edit</button>
     </section>
+<!--My Profile Page End-->
+
+<!--Edit Profile Page Start-->
     <section class="ProfileEditField" id="EditProfileField" style="display:none;">
         <form id="EditProfileForm">
-            <h2>Edit Profile</h2>
+            <h1>Edit Profile</h1>
             <div class="PersonalDetailField">
                 <h3 class="PersonalDetailsTitle">Personal Details</h3>
                 <label>Change Profile Picture</label>
                 <input type="image" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="ProfileEditImageButton">
                 <label for="ProfileNameBox">Full Name</label>
-                <input type="text" style="width: 200px" id="ProfileNameBox">
+                <input type="text" style="width: 250px; color: black" id="ProfileNameBox">
                 <label for="ProfileStatusBox">Status</label>
-                <input type="text" style="width: 200px" id="ProfileStatusBox">
+                <input type="text" style="width: 250px; color: black" id="ProfileStatusBox">
                 <label for="ProfileBio"> Bio</label>
-                <input type="text" style="width: 250px; height: 200px" id="ProfileBio">
-                <button class="ProfileEditButton" type="button" onclick="submitProfileEdit()">Submit</button>
+                <input type="text" style="width: 250px; height: 150px; color: black" id="ProfileBio">
+                <button class="button" type="button" onclick="submitProfileEdit()">Submit</button>
             </div>
         </form>
     </section>
+<!--Edit Profile Page End-->
 
 <!--Nav Bar-->
 <div id="exit" class="overlay2" onclick="closeNav()"></div>

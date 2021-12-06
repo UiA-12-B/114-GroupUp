@@ -1,37 +1,45 @@
+/*Format contain*/
 .ProfileContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+/*Style for profile picture*/
 .ProfilePicture{
     border-radius:50%;
     width: 100px;
 }
-
-.ProfileImaigeField{
+/*Format profile image*/
+.ProfileImageField{
     display: flex;
     flex-direction: row;
 }
-
+/*Style for personal details*/
 .ProfileNameField{
     margin-left: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
 }
 
 .ProfileEventField{
     display: flex;
     flex-direction: row;
     margin-left: 10px;
+    text-align: center;
 }
 
 .ProfileJoinedEvents{
     margin-left: 30px;
+    text-align: center;
 }
 
 .ProfileEditField{
     display:flex;
     flex-direction:column;
     align-items:center;
+    text-align: center;
+    color: white;
 }
 
 .PersonalDetailField{
