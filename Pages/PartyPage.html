@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GroupUp Gaming</title>
-    <link rel="stylesheet" href="UniqueStyles.css">
-    <link rel="stylesheet" href="GenericStyles.css">
-    <link rel="stylesheet" href="StyleMaster.css">
+    <title>GroupUp Party</title>
+    <link rel="stylesheet" href="../UniqueStyles.css">
+    <link rel="stylesheet" href="../GenericStyles.css">
+    <link rel="stylesheet" href="../StyleMaster.css">
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <section class="mainBody">
-    <h1 class="pageTitle">Gaming</h1>
+    <h1 class="pageTitle">Party</h1>
     <h2 class="subTitle"> Popular Events</h2>
     <div class="scrollArea">
         <a class="bx" href="#GP1">
@@ -150,43 +150,7 @@
     /* Nav bar end */
     
 </script>
-<script>
-    // Får tak i knappen som åpner modalen
-    var btn = document.querySelectorAll("a.bx");
-
-    // Får tak i alle modals
-    var modals = document.querySelectorAll('.modal');
-
-    // Får ta i span element
-    var spans = document.getElementsByClassName("lukk");
-
-    // Åpner modal referert i knapp
-    for (var i = 0; i < btn.length; i++) {
-        btn[i].onclick = function(e) {
-            e.preventDefault();
-            modal = document.querySelector(e.target.getAttribute("href"));
-            modal.style.display = "block";
-        }
-    }
-
-    // Lukker element når du trykker på x (Bruker ikke denne)
-    for (var i = 0; i < spans.length; i++) {
-        spans[i].onclick = function() {
-            for (var index in modals) {
-                if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
-            }
-        }
-    }
-
-    // Lukkes når du trykker utenfor modal
-    window.onclick = function(event) {
-        if (event.target.classList.contains('modal')) {
-            for (var index in modals) {
-                if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
-            }
-        }
-    }
-</script>
+<script src="Javascript/Catagory.js"></script>
 <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 </body>
 </html>

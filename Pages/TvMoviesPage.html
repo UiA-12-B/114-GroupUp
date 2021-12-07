@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GroupUp TV & Movies</title>
+    <link rel="stylesheet" href="../UniqueStyles.css">
+    <link rel="stylesheet" href="../GenericStyles.css">
+    <link rel="stylesheet" href="../StyleMaster.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class="mainBody">
+    <h1 class="pageTitle">TV & Movies</h1>
+    <h2 class="subTitle"> Popular Events</h2>
+    <div class="scrollArea">
+        <a class="bx" href="#GP1">
+            <div class="box">
+            <h3>Test Event</h3>
+            </div>
+            <br>
+            <p>DATE</p>
+            <p>TIME</p>
+            <p>PLACE</p>
+        </a>
+        <a class="bx" href="#GP2">
+            <div class="box">
+            <h3>Test Event 2</h3>
+            </div>
+            <br>
+            <p>DATE</p>
+            <p>TIME</p>
+            <p>PLACE</p>
+        </a>
+    </div>
+
+</section>
+
+<div id="GP1" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="lukk"></span>
+        <!--Skriv litt om deg selv-->
+        <h1>TEST</h1>
+        <div class="info">
+            <li style="border-bottom: 2px solid black;"><span class="bold-ottar">TEST:</span> TEST </li>
+        </div>
+    </div>
+
+</div>
+
+<div id="GP2" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="lukk"></span>
+        <!--Skriv litt om deg selv-->
+        <h1>TEST2</h1>
+        <div class="info">
+            <li style="border-bottom: 2px solid black;"><span class="bold">TEST:</span> TEST </li>
+        </div>
+    </div>
+
+</div>
+
+<section class="mainBody">
+    <h2 class="subTitle"> All Events</h2>
+    <div class="scrollArea">
+        <div class="bx" onclick="TEST()">
+            <div class="box">
+            <h3>Test Event</h3>
+            </div>
+            <br>
+            <p>DATE</p>
+            <p>TIME</p>
+            <p>PLACE</p>
+        </div>
+        <div class="bx" onclick="TEST()">
+            <div class="box">
+            <h3>Test Event</h3>
+            </div>
+            <br>
+            <p>DATE</p>
+            <p>TIME</p>
+            <p>PLACE</p>
+        </div>
+        <div class="bx" onclick="TEST()">
+            <div class="box">
+            <h3>Test Event</h3>
+            </div>
+            <br>
+            <p>DATE</p>
+            <p>TIME</p>
+            <p>PLACE</p>
+        </div>
+        <div class="bx" onclick="TEST()">
+            <div class="box">
+            <h3>Test Event</h3>
+            </div>
+            <br>
+            <p>DATE</p>
+            <p>TIME</p>
+            <p>PLACE</p>
+        </div>
+        <div class="bx" onclick="TEST()">
+            <div class="box">
+            <h3>Test Event</h3>
+            </div>
+            <br>
+            <p>DATE</p>
+            <p>TIME</p>
+            <p>PLACE</p>
+        </div>
+        <div class="bx" onclick="TEST()">
+            <div class="box">
+            <h3>Test Event</h3>
+            </div>
+            <br>
+            <p>DATE</p>
+            <p>TIME</p>
+            <p>PLACE</p>
+        </div>
+    </div>
+
+</section>
+<div id="myNav" class="overlay">
+    <div class="overlay-content">
+        <a href="MyActivitiesPage.html">My Activities</a>
+        <a href="CategoryListPage.html">Categories</a>
+        <a href="ProfilePage.html">Profile</a>
+        <a href="SettingsPage.html">Settings</a>
+        <a onclick="closeNav()" class="close">Close</a>
+    </div>
+</div>
+<div class="nav">
+    <button id="open" class="open" onclick="openNav()"><span class="iconify" data-icon="gg:menu" data-height="40"></span></button>
+</div>
+
+<script>
+    /* Open */
+    function openNav() {
+        document.getElementById("myNav").style.display = "block";
+    }
+
+    /* Close */
+    function closeNav() {
+        document.getElementById("myNav").style.display = "none";
+    }
+
+    /* Nav bar end */
+    
+</script>
+<script src="Javascript/Catagory.js"></script>
+<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+</body>
+</html>
