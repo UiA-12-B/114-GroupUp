@@ -1,4 +1,4 @@
-﻿# GroupUp - IS114
+﻿# [GroupUp - IS114 ](https://uia-12-b.github.io/114-GroupUp/index.html)
 
 **GroupUp** er en app/web applikasjon som kan brukes av **studenter** til å finne eller å arrangere forskjellige **aktiviteter og arrangementer**, såkalte “events”. “Events” blir lagt ut i kategorier som tilsier hva slags aktiviteter skal skje på “eventen”.
 
