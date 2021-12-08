@@ -81,14 +81,14 @@
     height: 100vh;
 }
 
-/*General style for body and contain*/
+/*Style for body and contain*/
 body{
     background-color: #658DF3;
     font-family: 'Epilogue';
     font-weight: 400;
     color: white;
 }
-/*General style for the Sign-up form*/
+/*Style for the Sign-up form*/
 .form{
     padding: 5px;
     display: flex;
