@@ -35,11 +35,6 @@
  }
 
 
-
-
-
-
-
- for ( var i = 4, len = localStorage.length; i < len; ++i ) {
-    console.log( localStorage.getItem( localStorage.key( i ) ) );
-  }
+for ( var i = 0, len = localStorage.length; i < len; ++i ) {
+  console.log( localStorage.getItem( localStorage.key( i ) ) );
+}
