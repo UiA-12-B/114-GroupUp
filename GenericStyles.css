@@ -1,3 +1,4 @@
+/* Hoved farge på bakgrunn*/
 html{
     background-color:#3352F3;
     font-family: 'Epilogue';
@@ -5,7 +6,7 @@ html{
     margin:0;
     padding:0;
 }
-
+/* Styling for tittel tekst*/
 .pageTitle{
     color: white;
     text-align: center;
@@ -13,14 +14,14 @@ html{
     font-weight: 700;
     font-size: 50px;
 }
-
+/* Farge for undertittel teskts*/
 .subTitle{
     color: white;
     text-align: center;
     font-size: 30px;
     font-weight: 700;
 }
-
+/* Farge for Event tittel tekst */
 .eventTitle{
     color: white;
     padding-top: 20px;
@@ -28,7 +29,7 @@ html{
     font-weight: 700;
     font-size: 25px;
 }
-
+/* Farge for kategori tittel tekst*/
 .categoryTitle{
     color: white;
     padding-top: 20px;
@@ -36,7 +37,7 @@ html{
     font-weight: 700;
     font-size: 25px;
 }
-
+/* Styling for generell knapp*/
 .button{
     margin: auto;
     display: block;
@@ -53,9 +54,394 @@ html{
     box-shadow: 0px 3px 5px black;
     font-weight: bold;
 }
-
+/* Styling for hovre over generell knapp*/
 .button:hover{
     color: #717171;
     transition: 0.5s;
+}
+
+/* Nav bar css*/
+
+.nav {
+    position: fixed; 
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%);
+}
+
+.nav button {
+    display: inline-block;
+    color: white;
+    height: 60px;
+    width: 70px;
+    border-radius: 14px;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(57, 57, 244, 1);
+    border: none;
+    cursor: pointer;
+}
+
+.overlay {
+    height: 50%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(4, 42, 241, 1);
+}
+.overlay2 {
+    height: 50%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(4, 44, 241, 0.247);
+}
+
+.overlay3 {
+    height: 90%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(4, 42, 241, 1);
+}
+.overlay4 {
+    height: 10%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(4, 44, 241, 0.247);
+}
+
+.overlay3 h1 {
+    color: white;
+}
+
+.overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    padding-top: 20px;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay3 a {
+    padding: 8px;
+    text-decoration: none;
+    padding-top: 20px;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: lightgray;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+  
+@media screen and (max-width: 450px) {
+    .overlay a {font-size: 28px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        padding-top: 5px;
+    }
+    .nav button {
+        margin-right: 20px;
+        height: 60px;
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        padding-top: 5px;
+    }
+}
+/* Styling for label */
+label {
+    color: white;
+    display: inline-flex;
+    font-size: 30px;
+}
+/* Oppsett for sidene */
+.side {
+    display: inline-block;
+}
+/* Styling for generell input */
+input {
+    background-color: rgb(94, 112, 199);
+    color: rgb(179, 179, 179);
+    padding: 2px 2px;
+    border-radius: 20px;
+    border:none;
+    font-size: 20px;
+    text-align: center;
+}
+/* Styling for generel select */
+select {
+    background-color: rgb(94, 112, 199);
+    color: rgb(179, 179, 179);
+    padding: 2px 2px;
+    border-radius: 20px;
+    border:none;
+    font-size: 20px;
+    text-align: center;
+}
+/* Styling for submit knappen ved oppretting av event */
+.submit{
+    display: inline-block;
+    color: white;
+    height: 60px;
+    width: auto;
+    border-radius: 14px;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(57, 57, 244, 1);
+    border: none;
+    cursor: pointer;
+}
+
+/* Nav bar css slutt*/
+
+/* Sekjonering av kortene i MyActivities osv. */
+.section {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    margin: auto;
+    align-items: center;
+}
+/* Kontainer for kortene */
+.container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+/* Styling for kortene */
+.card {
+    min-height: 250px;
+    width: 15rem;
+    border-radius: 30px;
+    padding: 0 5rem;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0 0 50px rgba(0,0,0,0.2);
+    background-color: rgba(45, 28, 144, 0.74);
+}
+/* Styling for info overskrift i kort popup */
+.info h2{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+/* Styling for mindre info overskrift i kort popup */
+.info h3{
+    font-size: 1.3rem;
+    padding : 1rem 0;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    transition: all 0.75s ease-out;
+
+}
+/* Gjør div usynnelig */
+.hidden {
+    opacity:0;
+}
+/* Aktiver usynnelig element*/
+.active {
+    border:1px solid white;
+}
+
+/* Styling for dot brukt i CatagoryListPage */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: darkslateblue;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 2vh;
+    user-select: none;
+    -webkit-user-select: none;
+}
+/* Styling for neste og forrige i CatagoryListPage */
+.neste, .forrige {
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    font-size: 45px;
+    display: inline-block;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.view{
+    display: inline-block;
+    color: white;
+    height: 60px;
+    width: 100%;
+    border-radius: 14px;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(57, 57, 244, 1);
+    border: none;
+    cursor: pointer;
+}
+/* Sentrering for dot brukt i CatagoryListPage */
+.dots {
+    text-align: center;
+
+}
+/* Generell Scrollfunksjon til siden */
+.scrollArea{
+    display: flex;
+    overflow-x: auto;
+    width: 275px;
+    padding-right: 50px;
+    margin: auto;
+    scroll-behaviour: smooth;
+    border-top: solid 1px transparent;
+    border-bottom: solid 1px transparent;
+    margin-bottom: 50px;
+}
+/* Definerer scroll område for bx elemtnet */
+.scrollArea .bx{
+    flex: 0 0 300px;
+    width: 100px;
+    height: 240px;
+    display: inline-block;
+    background-color: white;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0, .5);
+    cursor: pointer;
+}
+/* Definerer scroll område for a elemtnet */
+.scrollArea a{
+    flex: 0 0 300px;
+    width: 100px;
+    height: 240px;
+    display: inline-block;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0, .5);
+    cursor: pointer;
+}
+/* Definerer scroll område for bx->h3 elemtnet */
+.scrollArea .bx h3 {
+    color: black;
+    padding-left: 10px;
+    text-align: center;
+}
+/* Definerer scroll område for bx->box elemtnet */
+.scrollArea .bx .box {
+    display: inline-block;
+    width: 100%;
+}
+
+/* Definerer scroll område for bx->button elemtnet */
+.scrollArea .bx button {
+    display: block;
+    color: white;
+    height: 50px;
+    width: 30%;
+    border-radius: 14px;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(57, 57, 244, 1);
+    border: none;
+    cursor: pointer;
+}
+/* Aligner p element til senter*/
+p {
+    text-align: center;
+}
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+/* Modal Content Styling */
+.modal-content {
+    position: relative;
+    left: 0;
+    top: 10vh;
+    margin: auto;
+    padding: 20px;
+    width: 60%;
+    text-align: center;
+    min-height: 30vh;
+    width: 25rem;
+    border-radius: 30px;
+    padding: 0 5rem;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0 0 50px rgba(0,0,0,0.2);
+    background: white;
+    color: black;
+}
+/* info Styling */
+.info{
+    text-align: center;
+}
+/* Modal span Styling */
+.info span{
+    font-size: 1em;
+    padding : 1rem 0;
+    color: white;
+    text-align: center;
+    top: -100px;
+    z-index: 1;
 }
 
