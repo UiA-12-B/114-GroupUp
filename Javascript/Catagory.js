@@ -33,3 +33,13 @@
          }
      }
  }
+
+
+
+
+
+
+
+ for ( var i = 4, len = localStorage.length; i < len; ++i ) {
+    console.log( localStorage.getItem( localStorage.key( i ) ) );
+  }
