@@ -8,26 +8,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<form>
+<form name="myform" method="post">
     <div class="form">
         <img class="logo" src="Bilder/groupup_logo_hvit.png"/>
         <h1>Sign In</h1>
         <div class="input-box">
             <i class="fas fa-user"></i>
-            <input type="text" name="username" placeholder="Username" required>
+            <input onkeyup="checkFormsValidity();" type="text" name="username" placeholder="Username" required>
         </div>
         <div class="input-box">
             <i class="fas fa-lock"></i>
-            <input type="password" name="password" placeholder="Password" required>
+            <input onkeyup="checkFormsValidity();" type="password" name="password" placeholder="Password" required>
         </div>
         <p>Forgot your <a href="#">password?</a></p>
         <label>
             <input type="checkbox" name="rememberaccount">Remember my account
         </label>
-        <a href="LoadingPage.html"><button type="submit" class="button">Sign In</button></a>
+        <a href="LoadingPage.html"><input type="submit" class="button" id="SubmitButton"></input></a>
         <p>Doesn't have an account? <a href="CreateAccountPage.html"> Sign Up here.</a></p>
     </div>
 </form>
 
+<script>
+var sbmtBtn = document.getElementById("SubmitButton");
+sbmtBtn.disabled = true; 
+
+function checkFormsValidity(){
+  var myforms = document.forms["myform"];   
+  if (myforms.checkValidity()) {
+    sbmtBtn.disabled = false;
+    window.location.href="LoadingPage.html";
+  } else {
+    sbmtBtn.disabled = true;
+  }
+}
+</script>
 </body>
 </html>

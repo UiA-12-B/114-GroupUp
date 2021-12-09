@@ -1,4 +1,4 @@
-﻿# [GroupUp - IS114 ](https://uia-12-b.github.io/114-GroupUp/index.html)
+# [GroupUp - IS114 ](https://uia-12-b.github.io/114-GroupUp/index.html)
 
 **GroupUp** er en app/web applikasjon som kan brukes av **studenter** til å finne eller å arrangere forskjellige **aktiviteter og arrangementer**, såkalte “events”. “Events” blir lagt ut i kategorier som tilsier hva slags aktiviteter skal skje på “eventen”.
 
@@ -197,5 +197,7 @@ console.log( localStorage.getItem( localStorage.key( i ) ) );
 
 Dette er nokk den mest avanserte skriptet vi har på siden. Denne får tak i et par interaktive element som et par knapper og noen dots for å lage funksjon for å kunne gå gjennom en rekke kort på samme side. 
 
+
+# 114-GroupUp
 
 

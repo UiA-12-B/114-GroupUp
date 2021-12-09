@@ -298,12 +298,7 @@ img {
     text-align: center;
     overflow: hidden;
 }
-/*Style for Logo*/
- .logo{
-    width: 137px;
-    height: 137px;
-    margin-top: 50px;
-}
+
 /*Style for filling boxes*/
 .input-box{
     max-width: 270px;
@@ -371,5 +366,9 @@ p{
     color: white;
     font-size: 1rem;
     margin-top: 5px;
+}
+
+input[type='submit']:disabled{
+	color:red;
 }
 
