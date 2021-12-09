@@ -6,7 +6,7 @@
 }
 /*Style for profile picture*/
 .ProfilePicture{
-    border-radius:50%;
+    border-radius:30px;
     width: 100px;
 }
 /*Format profile image*/
@@ -198,7 +198,7 @@ img {
     width: 137px;
     height: 137px;
     display: block;
-    padding-top: 25%;
+    
 }
 /* Style for ladoing bar start */
 .lds-roller { 
@@ -332,9 +332,10 @@ img {
 /*Style for text when filling information in the box*/
 input{
     font-size: 1.1rem;
-    background: none;
+    background: white;
     border: none;
-    outline: none;
+    outline: white;
+    border-radius: 10px;
     line-height: 1;
 }
 /*Style for the checkbox*/
@@ -343,24 +344,7 @@ input[type='checkbox']{
     height: 16px;
     margin-top: 5px;
 }
-/*Style for Sign in button*/
-.button{
-    margin: 30px 0;
-    width: 150px;
-    height: 50px;
-    border-radius: 50px;
-    border: none;
-    background-color: #0079f4;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: .5s;
-}
-/*Colour effect for button when we hover the cursor over it*/
-.button:hover{
-    background-color: #3939f4;
-}
+
 /*Style for text*/
 p{
     color: white;
@@ -372,3 +356,142 @@ input[type='submit']:disabled{
 	color:red;
 }
 
+.body2{
+    background-color:#3352F3;
+    font-family: 'Epilogue';
+    text-decoration: none;
+    margin:0;
+    padding:0;
+}
+
+/* Nav bar css*/
+
+.nav {
+    position: fixed; 
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%);
+}
+
+.nav button {
+    display: inline-block;
+    color: white;
+    height: 60px;
+    width: 70px;
+    border-radius: 14px;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(57, 57, 244, 1);
+    border: none;
+    cursor: pointer;
+}
+
+.overlay {
+    height: 60%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(4, 42, 241, 1);
+}
+.overlay2 {
+    height: 40%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(4, 44, 241, 0.247);
+}
+
+.overlay3 {
+    height: 90%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(4, 42, 241, 1);
+}
+.overlay4 {
+    height: 10%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(4, 44, 241, 0.247);
+}
+
+.overlay3 h1 {
+    color: white;
+}
+
+.overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    padding-top: 20px;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay3 a {
+    padding: 8px;
+    text-decoration: none;
+    padding-top: 20px;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: lightgray;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+  
+@media screen and (max-width: 450px) {
+    .overlay a {font-size: 28px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        padding-top: 5px;
+    }
+    .nav button {
+        margin-right: 20px;
+        height: 60px;
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        padding-top: 5px;
+    }
+}
