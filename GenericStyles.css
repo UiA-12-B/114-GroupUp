@@ -84,7 +84,7 @@ html{
 }
 
 .overlay {
-    height: 50%;
+    height: 60%;
     width: 100%;
     display: none;
     position: fixed;
@@ -94,7 +94,7 @@ html{
     background-color: rgba(4, 42, 241, 1);
 }
 .overlay2 {
-    height: 50%;
+    height: 40%;
     width: 100%;
     display: none;
     position: fixed;
