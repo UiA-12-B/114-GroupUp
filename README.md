@@ -195,7 +195,7 @@ console.log( localStorage.getItem( localStorage.key( i ) ) );
 }
 ```
 
-Dette er nokk den mest avanserte skriptet vi har på siden. Denne får tak i et par interaktive element som et par knapper og noen dots for å lage funksjon for å kunne gå gjennom en rekke kort på samme side. 
+Dette er nok det mest avanserte skriptet vi har på siden. Denne får tak i et par interaktive element som et par knapper og noen dots for å lage funksjon for å kunne gå gjennom en rekke kort på samme side. 
 
 
 # 114-GroupUp
