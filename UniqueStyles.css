@@ -183,7 +183,6 @@ p{
     color: white;
     font-size: 1rem;
     margin-top: 5px;
-
 }
 /* Setter spesielle hødye om enhet har en bredde på mindre enn 615px */
 @media (max-width: 615px){
@@ -286,7 +285,7 @@ img {
     transform: rotate(360deg);
 }
 }
-/* Style for ladoing bar stopp */
+/* Style for loading bar stopp */
 
 /*General style for Log in form*/
 .form{
@@ -297,6 +296,7 @@ img {
     align-items: center;
     text-align: center;
     overflow: hidden;
+    margin-top: -300px;
 }
 /*Style for Logo*/
  .logo{
