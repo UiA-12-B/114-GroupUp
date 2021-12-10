@@ -23,6 +23,10 @@
 }
 .ProfileInformationField{
     width: 350px;
+    margin-top: 10px;
+    background-color: #658DF3;
+    padding: 10px;
+    border-radius: 10px;
 }
 /* Style for Profile Event Field */
 .ProfileEventField{
