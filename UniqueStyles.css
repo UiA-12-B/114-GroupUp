@@ -21,6 +21,9 @@
     font-size: 18px;
     color: white;
 }
+.ProfileInformationField{
+    width: 350px;
+}
 /* Style for Profile Event Field */
 .ProfileEventField{
     display: flex;
